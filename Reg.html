@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Cool Login form | By Code Info</title>
+
+  <link rel="stylesheet" href="style.css">
+
+   <!-- Font Awesome Cdn Link -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+
+<body onload="randomValue() ">
+
+  <div class="wrapper">
+
+    <h1 class="regi">Sign Up</h1>
+
+    <p>Welcome to <a href="#" class="sellus">Sellus </a>multi vendor marketplace...</p>
+
+    <form>
+
+      <input type="text" placeholder="Enter your name..." required>
+
+      <input type="email" placeholder="Enter your email" required>
+
+      <input type="Username" placeholder="Username" required>
+
+      <input type="password" placeholder="Password" required>
+
+      <input type="password" placeholder="Comfirm password" required>
+
+      <div>
+
+        <input type="userid" id="input" readonly>
+
+        <script>
+
+let getValue = Math.floor(Math.random() * 100000) + 999999
+
+const randomValue = () => {
+
+return document.getElementById('input' ).value = getValue;
+
+} 
+
+</script>
+
+      </div>
+
+      <input type="userid" placeholder="Enter your User ID here" required>
+
+    </form>
+
+    <button>Signup</button>
+
+    <div class="not-member">
+
+      <input type="checkbox">
+
+      I agree to the 
+
+      <a href="">Terms</a> and <a href="">Condition</a><br>
+
+      Already have an account? <a href="/index.html">Login</a>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
